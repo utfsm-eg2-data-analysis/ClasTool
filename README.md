@@ -43,7 +43,7 @@ export ROOT_INCLUDE_PATH=${CLASTOOL}/include:${ROOT_INCLUDE_PATH}
 export LD_LIBRARY_PATH=${CLASTOOL}/slib/${OS_NAME}:${LD_LIBRARY_PATH}
 ```
 
-For this to make effect, remember to reload your bash session, by closing and opening your terminal session or by executing:
+For this to take effect, remember to reload your bash session by closing and opening your terminal session or by executing:
 
 ```
 source .bashrc
@@ -55,9 +55,7 @@ Just execute `make` in the current directory.
 
 ## Integration with ROOT command console
 
-Create an empty text file called `rootlogon.C` in your home directory.
-This file contains the instructions to run at the beginning of each **ROOT** console session.
-Inside the file, you should add this content:
+Create an empty text file called `rootlogon.C` in your home directory. This file contains the instructions to run at the beginning of each **ROOT** console session. Inside the file, you should add this content:
 
 ```
 {
@@ -66,18 +64,16 @@ Inside the file, you should add this content:
 }
 ```
 
-After saving the `rootlogon.C` file, for this to make effect
-you need to create another empty text file called `.rootrc` in your home directory aswell.
-Which you will fill with this only line:
+After saving the `rootlogon.C` file, for this to take effect, you need to create another empty text file called `.rootrc` in your home directory as well.
 
 ```
 Rint.Logon: ~/rootlogon.C
 ```
+This step is option if you keep `rootlogon.C` in the same file where you open you ROOT session.
 
 ## Debug for ROOT
 
-From **ROOT version 6.14** onwards, it has become necessary to copy all dictionaries files into the dynamic libraries folders `slib/`.
-To prevent the warning messages, inside **ClasTool** directory, run:
+From **ROOT version 6.14** onwards, it is necessary to copy all dictionaries files into the dynamic libraries folders `slib/`. To prevent the warning messages, inside **ClasTool** directory, run:
 
 ```
 find . -name *.pcm -exec cp -t ./slib/Linux {} +
