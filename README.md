@@ -82,3 +82,7 @@ To prevent the warning messages, inside **ClasTool** directory, run:
 ```
 find . -name *.pcm -exec cp -t ./slib/Linux {} +
 ```
+
+## Additional documentation
+See [README.ClasTool](README.ClasTool)
+
