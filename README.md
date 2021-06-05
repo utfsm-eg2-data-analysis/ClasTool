@@ -6,6 +6,8 @@
 
 * **ROOT**
 
+* **gawk**
+
 ## Environment variables
 
 In sumary, you must define the following environment variables:
