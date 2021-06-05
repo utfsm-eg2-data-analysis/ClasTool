@@ -426,7 +426,7 @@ Int_t TPartSieveHists::Fill(){
 	Float_t p=evnt->GetMomentum();
 	Float_t beta=evnt->GetBeta();
 
-	if(ipart==kElectron && jp==0 && evnt->GetId()==11){ // Electron with ID=11.
+	if(ipart==kElectron_CT && jp==0 && evnt->GetId()==11){ // Electron with ID=11.
       
 	  fCT->GetInvariants(&Q2,&W);
 	  if(W>0){

@@ -588,19 +588,19 @@ void TPartSieve::Print()
 {
   //Prints the number of each type of particle in the event and the SortFlag value.
   //You must call SieveEvent() first to see anything meaningful.
-  cout << "N Electron:  " << fNPart[kElectron] << endl;
-  cout << "N Positron:  " << fNPart[kPositron] << endl;
-  cout << "N Photon:    " << fNPart[kPhoton] << endl;
-  cout << "N Pion_Plus: " << fNPart[kPion_Plus] << endl;
-  cout << "N Pion_Minus:" << fNPart[kPion_Minus] <<endl;
-  cout << "N Kaon_Plus: " << fNPart[kKaon_Plus] << endl;
-  cout << "N Kaon_Minus:" << fNPart[kKaon_Minus] << endl;
-  cout << "N Proton:    " << fNPart[kProton] << endl;
-  cout << "N Neutron:   " << fNPart[kNeutron] << endl;
-  cout << "N Deuteron:  " << fNPart[kDeuteron] << endl;
-  cout << "N He3:       " << fNPart[kHe3] << endl;
-  cout << "N He4:       " << fNPart[kHe4] << endl;
-  cout << "N Unknown:   " << fNPart[kUnknown] << endl;
+  cout << "N Electron:  " << fNPart[kElectron_CT] << endl;
+  cout << "N Positron:  " << fNPart[kPositron_CT] << endl;
+  cout << "N Photon:    " << fNPart[kPhoton_CT] << endl;
+  cout << "N Pion_Plus: " << fNPart[kPion_Plus_CT] << endl;
+  cout << "N Pion_Minus:" << fNPart[kPion_Minus_CT] <<endl;
+  cout << "N Kaon_Plus: " << fNPart[kKaon_Plus_CT] << endl;
+  cout << "N Kaon_Minus:" << fNPart[kKaon_Minus_CT] << endl;
+  cout << "N Proton:    " << fNPart[kProton_CT] << endl;
+  cout << "N Neutron:   " << fNPart[kNeutron_CT] << endl;
+  cout << "N Deuteron:  " << fNPart[kDeuteron_CT] << endl;
+  cout << "N He3:       " << fNPart[kHe3_CT] << endl;
+  cout << "N He4:       " << fNPart[kHe4_CT] << endl;
+  cout << "N Unknown:   " << fNPart[kUnknown_CT] << endl;
   cout << "fSortFlag: " << fSortFlag << endl << endl;
 
 }
@@ -645,29 +645,29 @@ Int_t TPartSieve::IndtoID(Int_t Ind)
 }
 
   /*  switch(Ind) {
-  case kElectron:
+  case kElectron_CT:
     return kElectron_Id;
-  case kPion_Plus:
+  case kPion_Plus_CT:
     return kPion_Plus_Id;
-  case kPion_Minus:
+  case kPion_Minus_CT:
     return kPion_Minus_Id;
-  case kKaon_Plus:
+  case kKaon_Plus_CT:
     return kKaon_Plus_Id;
-  case kKaon_Minus:
+  case kKaon_Minus_CT:
     return kKaon_Minus_Id;
-  case kProton:
+  case kProton_CT:
     return kProton_Id;
-  case kPhoton:
+  case kPhoton_CT:
     return kPhoton_Id;
-  case kNeutron:
+  case kNeutron_CT:
     return kNeutron_Id;
-  case kDeuteron:
+  case kDeuteron_CT:
     return kDeuteron_Id;
-  case kHe4:
+  case kHe4_CT:
     return kHe4_Id;
-  case kHe3:
+  case kHe3_CT:
     return kHe3_Id;
-  case kPositron:
+  case kPositron_CT:
     return kPositron_Id;
   default:
     if(fDebug_Mode>-1){

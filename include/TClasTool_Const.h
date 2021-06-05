@@ -21,20 +21,20 @@
 
 // for particles identification  purpose. This list is the index into the 
 // arrays associated with mass and particle property.
-enum EParticleType {kUnknown,             // =0
-                    kElectron,            // =1
-		    kPositron,            // =2
-		    kPhoton, 
-		    kPion_Plus, 
-		    kPion_Minus, 
-		    kKaon_Plus, 
-		    kKaon_Minus, 
-		    kProton, 
-		    kNeutron, 
-		    kDeuteron, 
-		    kHe3,                // =11
-		    kHe4, 
-		    kNParticleTypes};    // =13
+enum EParticleType {kUnknown_CT,             // =0
+                    kElectron_CT,            // =1
+		    kPositron_CT,            // =2
+		    kPhoton_CT, 
+		    kPion_Plus_CT, 
+		    kPion_Minus_CT, 
+		    kKaon_Plus_CT, 
+		    kKaon_Minus_CT, 
+		    kProton_CT, 
+		    kNeutron_CT, 
+		    kDeuteron_CT, 
+		    kHe3_CT,                // =11
+		    kHe4_CT, 
+		    kNParticleTypes_CT};    // =13
 
 // PDG particle Id's, which are retured by the SEB package in RECSIS.
 enum EParticleId {  kUnknown_Id   =  0,

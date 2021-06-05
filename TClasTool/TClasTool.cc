@@ -171,31 +171,31 @@ Int_t ClasTool::GetTypeFromPid(Int_t pid){
   // 
   switch(pid) {
   case kUnknown_Id:
-    return kUnknown;
+    return kUnknown_CT;
   case kPion_Plus_Id:
-    return kPion_Plus;
+    return kPion_Plus_CT;
   case kProton_Id:
-    return kProton;
+    return kProton_CT;
   case kElectron_Id:
-    return kElectron;
+    return kElectron_CT;
   case kPhoton_Id:
-    return kPhoton;
+    return kPhoton_CT;
   case kPion_Minus_Id:
-    return kPion_Minus;
+    return kPion_Minus_CT;
   case kNeutron_Id:
-    return kNeutron;
+    return kNeutron_CT;
   case kKaon_Plus_Id:
-    return kKaon_Plus;
+    return kKaon_Plus_CT;
  case kDeuteron_Id:
-    return kDeuteron;
+    return kDeuteron_CT;
   case kKaon_Minus_Id:
-    return kKaon_Minus;
+    return kKaon_Minus_CT;
   case kHe4_Id:
-    return kHe4;
+    return kHe4_CT;
   case kHe3_Id:
-    return kHe3;
+    return kHe3_CT;
   case kPositron_Id:
-    return kPositron;
+    return kPositron_CT;
   default:
     return kERR;
   }
@@ -602,7 +602,7 @@ The code assumes that the zero-index particle is the electron.
       TVector3 elec_mom = fReader->GetPart3Vector(0);
       float    cos_z    = elec_mom.Z()/elec_mom.Mag();
       Float_t l_Q2 = 2.0*elec_mom.Mag()*fEBeam*(1-cos_z);
-      Float_t l_W2 = fgParticle_Mass[kProton]*fgParticle_Mass[kProton] + 2 * fgParticle_Mass[kProton] * (fEBeam - elec_mom.Mag()) - l_Q2;
+      Float_t l_W2 = fgParticle_Mass[kProton_CT]*fgParticle_Mass[kProton_CT] + 2 * fgParticle_Mass[kProton_CT] * (fEBeam - elec_mom.Mag()) - l_Q2;
       //      Float_t l_W2 = 56;
       *Q2 = l_Q2;
       *W2 = l_W2;
